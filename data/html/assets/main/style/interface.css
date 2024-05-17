@@ -1,0 +1,89 @@
+._Pane {
+    border-radius: .3rem;
+    background: var(--_Plane2);
+    border: .1rem solid var(--_Plane4);
+}
+
+._Window {
+    position: absolute;
+    top: -23%; left: 0%; padding: .8rem;
+    width: 30rem; height: fit-content;
+    animation: _Window var(--_Fast);
+    overflow: visible; color: var(--_Plane9);
+}
+@keyframes _Window {
+    0% { transform: translateY(-.5rem); }
+}
+._Window::backdrop {
+    background: var(--_Plane0); opacity: .8;
+}
+._Window input, ._Window textarea {
+    position: relative;
+    margin: .3rem .4rem .3rem .4rem;
+    width: calc(100% - 2.6rem);
+}
+._Window textarea {
+    margin-bottom: .1rem;
+}
+._Window button {
+    float: right;
+}
+._Window a {
+    float: right; font-size: .9rem;
+    margin: .5rem .8rem 0 0;
+}
+._Window hr {
+    height: .1rem; border: none;
+    background: var(--_Plane4);
+    margin: .5rem 0 .5rem 0;
+}
+._Window ._Spacer {
+    margin-bottom: .8rem;
+}
+._Window [_exit] {
+    cursor: pointer;
+}
+
+#_Logs {
+    position: fixed; z-index: 5;
+    bottom: 2rem; left: 2rem;
+    width: calc(50% - 2rem); height: fit-content;
+    pointer-events: none;
+}
+#_Logs div {
+    position: relative;
+    width: fit-content; height: fit-content;
+    max-width: 100%; line-height: 1.4rem;
+    padding: .3rem .6rem .3rem .6rem;
+    margin-top: .3rem; font-size: .9rem;
+    animation: _LogShow var(--_Fast);
+}
+@keyframes _LogShow {
+    0% { margin-top: -1.6rem; top: 4rem; }
+    100% { margin-top: .3rem; top: 0rem; }
+}
+@keyframes _LogHide {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+._LogError {
+    color: var(--_Notice);
+    border-color: var(--_Notice); 
+}
+
+#_Load {
+    width: 1.4rem; height: 1.4rem; z-index: 10;
+    border-radius: 50%; animation: _Load .5s linear infinite;
+    border: .1rem solid var(--_Plane6);
+}
+#_Load::after {
+    content: ""; position: absolute;
+    top: -.05rem; left: 50%; border-radius: 50%;
+    width: .5rem; height: .5rem;
+    transform: translate(-50%, -50%);
+    background-color: var(--_Plane8);
+}
+@keyframes _Load {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,48 @@
+._Blade { z-index: 10; transition: transform var(--_Fast); }
+#_Clients { z-index: 10; transition: transform var(--_Fast); }
+
+#_Background {
+    font-size: 11.5rem; font-family: monospace;
+    color: var(--_Plane1); user-select: none;
+    -webkit-user-select: none; z-index: -1;
+    cursor: default; line-height: 10rem;
+}
+#_Background div {
+    position: absolute;
+    animation: _BackRise linear infinite, _BackRotate linear infinite;
+}
+#_Background :nth-child(1) { left: 0%; animation-duration: 12s, 7s; animation-delay: 0s, -2s; animation-direction: normal, reverse; }
+#_Background :nth-child(2) { left: 10%; animation-duration: 8s, 8s; animation-delay: -4s, -4s; }
+#_Background :nth-child(3) { left: 25%; animation-duration: 9s, 9s; animation-delay: -3s, 0s; animation-direction: normal, reverse; }
+#_Background :nth-child(4) { left: 40%; animation-duration: 7s, 9s; animation-delay: -7s, -1s; }
+#_Background :nth-child(5) { left: 55%; animation-duration: 11s, 10s; animation-delay: 0s, -7s; }
+#_Background :nth-child(6) { left: 75%; animation-duration: 8s, 9s; animation-delay: -3s, -1s; animation-direction: normal, reverse; }
+#_Background :nth-child(7) { left: 90%; animation-duration: 9s, 7s; animation-delay: -1s, 0s; }
+#_Background :nth-child(8) { right: 0%; animation-duration: 10s, 9s; animation-delay: -8s, -5s; animation-direction: normal, reverse; }
+@keyframes _BackRise {
+    0% { bottom: -10rem; } 100% { bottom: 100%; }
+}
+@keyframes _BackRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#_Logo {
+    content: var(--_Logo);
+    position: absolute; height: 3.5rem;
+    bottom: 4.6rem; left: 50%; padding: .1rem;
+    transform: translateX(-50%);
+    border: .1rem solid transparent;
+}
+#_Links {
+    position: absolute;
+    bottom: 2.8rem; left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem; color: var(--_Plane7);
+}
+a {
+    color: var(--_Plane9);
+}
+a:focus #_Logo {
+    border: .1rem solid var(--_Accent);
+}

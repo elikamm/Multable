@@ -1,0 +1,43 @@
+<div id="_Ribbon">
+    <button id="_Edit"><u>e</u>dit ..</button>
+    <button id="_Upload"><u>u</u>pload</button>
+
+    <div id="_Title">
+        <span id="_Name">[untitled]</span><span id="_Edited">*</span>
+    </div>
+
+    <button id="_Run" disabled><span>▶</span> <u>r</u>un</button>
+</div>
+
+<section>
+    <dialog class="_Pane _Window" _name="_Edit">
+        <h1>Edit</h1>
+        <h2>load a game</h2>
+        <div class="_Compact">
+            <input type="text" placeholder=".." autocomplete="off" _flow _focus _sync="_game">
+            <h4>game</h4>
+            <input type="password" placeholder=".." autocomplete="off" _flow _sync="_password">
+            <h4>key</h4>
+        </div>
+        <button _default="load" _flow disabled>create</button>
+        <a _exit>close</a>
+    </dialog>
+
+    <dialog class="_Pane _Window" _name="_Upload">
+        <h1>Upload</h1>
+        <h2>submit your game</h2>
+        <div class="_Compact">
+            <input type="text" placeholder=".." autocomplete="off" _flow _focus _sync="_game">
+            <h4>game</h4>
+            <input type="password" placeholder=".." autocomplete="off" _flow _sync="_password">
+            <h4>key</h4>
+        </div>
+        <hr>
+        <textarea id="_Info" type="text" placeholder=".." rows="2" _flow></textarea>
+        <h4>description</h4>
+        <input id="_Hide" type="checkbox">
+        <h2>hide in search</h2>
+        <button _default="upload" _flow disabled>create</button>
+        <a _exit>close</a>
+    </dialog>
+</section>

@@ -1,0 +1,31 @@
+{
+    "Name":     "Multable",
+    "Version":  "0.9d",
+    "Log":      false,
+    
+    "Port":     80,
+    "Abstract": true,
+
+    "Ticks":    20,
+
+    "Paths": {
+        "Runtime":  "runtime",
+        "Server":   "server",
+
+        "Games":    "games",
+
+        "Events":   "data/events",
+        "Params":   "data/params.json",
+
+        "HTML":     "data/html"
+    },
+
+    "Scripts": {
+        "Runtime": [
+            "client", "register", "game", "room", "engine", "events"
+        ],
+        "Server": [
+            "web", "socket"
+        ]
+    }
+}

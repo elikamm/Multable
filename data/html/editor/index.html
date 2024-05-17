@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <include href="/assets/main/head.html"/>
+        <include href="/editor/ribbon/head.html"/>
+
+        <link rel="stylesheet" href="/editor/style/code.css">
+        <script src="/editor/script/update.js"></script>
+        <script src="/editor/script/input.js"></script>
+        <script src="/editor/script/code.js"></script>
+
+        <title>Editor - %Name%</title>
+    </head>
+
+    <body>
+        <include href="/assets/main/body.html"/>
+        <include href="/editor/ribbon/body.html"/>
+
+        <div class="_Pane" id="_Content">
+            <div id="_Measure"></div>
+            <textarea class="_Editor" id="_Input" autocomplete="off" spellcheck="false" autocorrect="off"></textarea>
+            <div class="_Editor" id="_Display">
+                <div id="_Code"><c_help>write your code here..</c_help></div>
+                <div id="_Caret">
+                    <div id="_Cursor"></div>
+                    <div id="_Autofill"></div>
+                </div>
+            </div>
+            <div id="_Lines"> 1</div>
+        </div>
+    </body>
+</html>

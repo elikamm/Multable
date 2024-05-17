@@ -1,0 +1,43 @@
+{
+    "casinoTable": ["design", "casino"],
+    "tableTable": ["design", "table"],
+
+    "upKey": ["key", "up"], "downKey": ["key", "down"],
+    "leftKey": ["key", "left"], "rightKey": ["key", "right"],
+    "fireKey": ["key", "fire"],
+
+    "frontSide": ["side", "front"],  "backSide": ["side", "back"],
+
+    "clubsSuit": ["suit", "clubs"], "diamondsSuit": ["suit", "diamonds"],
+    "heartsSuit": ["suit", "hearts"], "spadesSuit": ["suit", "spades"],
+
+    "backCard": ["type", "card/back"], "jokerCard": ["type", "card/joker"],
+
+    "clubs2": ["type", "card/clubs/2"], "clubs3": ["type", "card/clubs/3"], "clubs4": ["type", "card/clubs/4"],
+    "clubs5": ["type", "card/clubs/5"], "clubs6": ["type", "card/clubs/6"], "clubs7": ["type", "card/clubs/7"],
+    "clubs8": ["type", "card/clubs/8"], "clubs9": ["type", "card/clubs/9"], "clubs10": ["type", "card/clubs/10"],
+    "clubsJack": ["type", "card/clubs/jack"], "clubsQueen": ["type", "card/clubs/queen"],
+    "clubsKing": ["type", "card/clubs/king"], "clubsAce": ["type", "card/clubs/ace"],
+
+    "diamonds2": ["type", "card/diamonds/2"], "diamonds3": ["type", "card/diamonds/3"], "diamonds4": ["type", "card/diamonds/4"],
+    "diamonds5": ["type", "card/diamonds/5"], "diamonds6": ["type", "card/diamonds/6"], "diamonds7": ["type", "card/diamonds/7"],
+    "diamonds8": ["type", "card/diamonds/8"], "diamonds9": ["type", "card/diamonds/9"], "diamonds10": ["type", "card/diamonds/10"],
+    "diamondsJack": ["type", "card/diamonds/jack"], "diamondsQueen": ["type", "card/diamonds/queen"],
+    "diamondsKing": ["type", "card/diamonds/king"], "diamondsAce": ["type", "card/diamonds/ace"],
+
+    "hearts2": ["type", "card/hearts/2"], "hearts3": ["type", "card/hearts/3"], "hearts4": ["type", "card/hearts/4"],
+    "hearts5": ["type", "card/hearts/5"], "hearts6": ["type", "card/hearts/6"], "hearts7": ["type", "card/hearts/7"],
+    "hearts8": ["type", "card/hearts/8"], "hearts9": ["type", "card/hearts/9"], "hearts10": ["type", "card/hearts/10"],
+    "heartsJack": ["type", "card/hearts/jack"], "heartsQueen": ["type", "card/hearts/queen"],
+    "heartsKing": ["type", "card/hearts/king"], "heartsAce": ["type", "card/hearts/ace"],
+
+    "spades2": ["type", "card/spades/2"], "spades3": ["type", "card/spades/3"], "spades4": ["type", "card/spades/4"],
+    "spades5": ["type", "card/spades/5"], "spades6": ["type", "card/spades/6"], "spades7": ["type", "card/spades/7"],
+    "spades8": ["type", "card/spades/8"], "spades9": ["type", "card/spades/9"], "spades10": ["type", "card/spades/10"],
+    "spadesJack": ["type", "card/spades/jack"], "spadesQueen": ["type", "card/spades/queen"],
+    "spadesKing": ["type", "card/spades/king"], "spadesAce": ["type", "card/spades/ace"],
+
+    "blackChip": ["type", "chip/black"], "blueChip": ["type", "chip/blue"],
+    "greenChip": ["type", "chip/green"], "redChip": ["type", "chip/red"],
+    "whiteChip": ["type", "chip/white"]
+}

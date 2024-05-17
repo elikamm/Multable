@@ -1,0 +1,90 @@
+#_Center {
+    display: none;
+    position: absolute;
+    top: 38%; left: 50%;
+    transform: translate(-50%, -50%);
+    animation: _Center var(--_Fast);
+}
+@keyframes _Center {
+    0% { transform: translate(-50%, calc(-1rem - 50%)); }
+}
+#_Slides {
+    position: absolute;
+    top: 0; left: 0; overflow: hidden;
+    width: 100%; height: 100%;
+}
+#_Page {
+    position: absolute;
+    top: calc(100% + .3rem); left: 50%;
+    transform: translateX(-50%);
+    font-size: .8rem; color: var(--_Plane6);
+}
+
+[_name] {
+    display: none;
+    position: absolute;
+    top: 50%; left: .8rem;
+    width: calc(100% - 1.6rem); height: fit-content;
+    transform: translateY(-50%);
+}
+@keyframes _Slide {
+    0% { left: 100%; }
+}
+@keyframes _Shake {
+    0% { transform: translate(-47%, -50%); }
+    20% { transform: translate(-52%, -50%); }
+    40% { transform: translate(-48%, -50%); }
+    60% { transform: translate(-51%, -50%); }
+    80% { transform: translate(-49%, -50%); }
+}
+
+#_Digits {
+    position: relative;
+    width: fit-content; height: fit-content;
+    margin: .4rem 0 .4rem 0; left: 50%;
+    transform: translateX(-50%);
+}
+#_Digits input {
+    width: 2.7rem; height: 3.5rem; padding: 0%;
+    margin: 0; text-align: center;
+    font-size: 1.6rem;
+}
+
+#_Games {
+    position: relative;
+    display: grid; gap: .5rem; padding: .5rem;
+    grid-template-columns: repeat(2, calc(50% - .25rem));
+    grid-template-rows: repeat(2, calc(50% - .25rem));
+    width: calc(100% - 1rem); height: 12rem;
+    margin-top: .3rem; border-radius: .3rem;
+    background: var(--_Plane3);
+}
+#_Games:empty::after {
+    content: "you should make that game!";
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--_Plane5); font-size: .9rem;
+    white-space: pre; font-style: italic;
+}
+
+._Game {
+    position: relative;
+    width: 100%; height: 100%;
+    background: linear-gradient(var(--_Plane4), var(--_Shadow));
+}
+._Game h1 {
+    position: absolute;
+    top: .7rem; left: .7rem;
+    font-size: 1.3rem;
+}
+._Game h2 {
+    position: absolute; overflow: hidden;
+    top: 2rem; left: .7rem;
+    width: calc(100% - 1.4rem);
+    height: calc(100% - 3.4rem);
+    font-size: .9rem; text-align: left;
+}
+._Game h3 {
+    position: absolute;
+    bottom: .5rem; right: .7rem;
+}

@@ -1,0 +1,51 @@
+#_Load {
+    position: fixed;
+    top: 1.6rem; right: 1.6rem;
+}
+
+._Blade {
+    position: absolute;
+    left: 0; width: fit-content; height: fit-content;
+    font-size: 1.1rem; border-top-left-radius: 0;
+    border-bottom-left-radius: 0; border-left: none;
+    padding: .3rem .8rem .3rem .6rem;
+}
+._Blade::before {
+    font-weight: bold; display: block;
+    font-size: .6rem; color: var(--_Plane6);
+}
+._Blade:empty {
+    transform: translateX(-100%);
+}
+
+#_Name { top: 1rem; }
+#_Name::before { content: "NAME"; }
+#_Room { top: 4.2rem; cursor: copy; }
+#_Room::before { content: "ROOM"; }
+#_Room:hover::after {
+    content: "copy"; position: absolute;
+    top: 50%; left: calc(100% + .6rem);
+    transform: translateY(-50%);
+    font-size: .8rem; color: var(--_Plane8);
+}
+#_Room:active { color: var(--_Plane8); }
+
+#_Clients {
+    position: absolute;
+    right: 0; bottom: 1.5rem; text-align: right;
+    width: fit-content; height: fit-content;
+    border-top-right-radius: 0; border-right: none;
+    border-bottom-right-radius: 0; font-size: 1.1rem;
+    padding: .3rem .6rem .3rem .8rem;
+}
+#_Clients::before {
+    content: "PLAYERS";
+    font-weight: bold; display: block;
+    font-size: .6rem; color: var(--_Plane6);
+}
+#_Clients:empty {
+    transform: translateX(100%);
+}
+#_Clients span {
+    color: var(--_Plane8);
+}

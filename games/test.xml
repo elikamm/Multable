@@ -1,0 +1,16 @@
+<meta>
+    <name>Test</name>
+    <info>a simple test</info>
+    <key>password</key>
+    <hide>false</hide>
+</meta>
+<hot>
+    <plays>38</plays>
+    <caret>62</caret>
+</hot>
+<code>
+    num = 2
+    print(abs(num * -2))
+    on join(player):
+        print(player + " joined")
+</code>

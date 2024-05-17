@@ -1,0 +1,93 @@
+body {
+    background: var(--_Plane0);
+    font-family: "_Text";
+    color: var(--_Plane9);
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold; font-size: 1.4rem;
+    line-height: 1.4rem; margin: 0;
+}
+h2 {
+    font-weight: normal; font-size: .9rem;
+    line-height: 1.2rem; margin: 0;
+    color: var(--_Plane8);
+}
+h3 {
+    font-weight: normal; font-size: .7rem;
+    line-height: .7rem; margin: 0; text-align: center;
+    color: var(--_Plane6); font-style: italic;
+}
+h4 {
+    position: relative; float: right; top: -.7rem; right: .9rem;
+    margin: 0; line-height: .7rem; margin-bottom: -.7rem;
+    font-weight: normal; font-size: .7rem; background: var(--_Plane3);
+    padding: 0 .2rem 0 .2rem; border-radius: .35rem;
+    width: fit-content; color: var(--_Plane7);
+}
+input, textarea {
+    font-family: "_Text";
+    outline: none; border-radius: .3rem;
+    border: .1rem solid var(--_Plane6);
+    height: 1.5rem; padding: .5rem .8rem .5rem .8rem;
+    font-size: 1.1rem; background: var(--_Plane3);
+    color: var(--_Plane9); resize: none;
+}
+textarea {
+    height: fit-content;
+    padding: .7rem .8rem .7rem .8rem;
+}
+input:focus, textarea:focus {
+    border: .1rem solid var(--_Accent);
+}
+input:focus + h4, textarea:focus + h4 {
+    color: var(--_Accent);
+}
+input:invalid, textarea:invalid {
+    border: .1rem solid var(--_Notice);
+}
+input:invalid + h3, textarea:invalid + h3 {
+    color: var(--_Notice);
+}
+input:disabled, textarea:disabled {
+    border: .1rem solid var(--_Plane5);
+    background: var(--_Plane2);
+    color: var(--_Plane6);
+}
+button {
+    font-family: "_Text";
+    outline: none; border-radius: .3rem;
+    border: .1rem solid var(--_Plane5);
+    height: 2rem; padding: .5rem; line-height: .8rem;
+    padding-left: .9rem; padding-right: .9rem;
+    font-size: 1rem; outline: none; cursor: pointer;
+    background: var(--_Plane3);
+    color: var(--_Plane9);
+}
+button:focus {
+    border: .1rem solid var(--_Accent);
+}
+button:hover {
+    background: var(--_Plane4);
+}
+button:active {
+    background: var(--_Plane3);
+}
+button:disabled {
+    border: .1rem solid var(--_Plane4);
+    background: var(--_Plane2);
+    color: var(--_Plane7);
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    outline: none; border: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active, a:focus {
+    color: var(--_Accent);
+}

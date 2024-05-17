@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <include href="/assets/main/head.html"/>
+        <include href="/table/overlay/head.html"/>
+
+        <link rel="stylesheet" href="/start/style/main.css">
+        <link rel="stylesheet" href="/start/style/center.css">
+        <script src="/start/script/display.js"></script>
+        <script src="/start/script/input.js"></script>
+        <script src="/start/script/start.js"></script>
+    </head>
+    
+    <body>
+        <include href="/assets/main/body.html"/>
+        <include href="/table/overlay/body.html"/>
+        <div id="_Background">
+            <div>♠</div> <div>♥</div> <div>♦</div> <div>♣</div>
+            <div>♠</div> <div>♥</div> <div>♦</div> <div>♣</div>
+        </div>
+        <div class="_Pane _Window" id="_Center">
+            <div id="_Slides">
+                <div _name="Name" _page="● ○ ○">
+                    <h1>Name</h1>
+                    <h2>how would you like to be called?</h2>
+                    <input type="text" pattern="[A-Za-z0-9]{1,10}" autocomplete="off" placeholder=".." _flow _focus>
+                    <h3>use up to 10 letters</h3>
+                    <button _flow>next</button>
+                </div>
+                <div _name="Room" _page="○ ● ○">
+                    <h1>Room</h1>
+                    <h2>which room do you want to join?</h2>
+                    <div id="_Digits">
+                        <input type="text" pattern="[0-9]{1}" _focus>
+                        <input type="text" pattern="[0-9]{1}"> <input type="text" pattern="[0-9]{1}">
+                        <input type="text" pattern="[0-9]{1}"> <input type="text" pattern="[0-9]{1}">
+                        <input type="text" pattern="[0-9]{1}">
+                    </div>
+                    <h3>input an existing room's ID</h3>
+                    <hr>
+                    <h2>or open a new room?</h2>
+                    <button _flow>new room</button>
+                </div>
+                <div _name="Game" _page="○ ○ ● ○">
+                    <h1>Game</h1>
+                    <h2>which game do you want to host?</h2>
+                    <input type="text" id="_Search" placeholder=".." autocomplete="off" _focus>
+                    <div id="_Games"></div>
+                </div>
+                <div _name="Setup" _page="○ ○ ○ ●">
+                    <h1>Setup</h1>
+                    <h2>gate your room with a password</h2>
+                    <input type="password" autocomplete="off" placeholder=".." _flow _focus>
+                    <h3>leave empty to skip</h3>
+                    <button _flow>next</button>
+                </div>
+                <div _name="Password" _page="○ ○ ●">
+                    <h1>Password</h1>
+                    <h2>this room is password protected</h2>
+                    <input type="password" autocomplete="off" placeholder=".." _flow _focus>
+                    <button _flow>next</button>
+                </div>
+            </div>
+            <div id="_Page"></div>
+        </div>
+        <section>
+            <a href="/"><img id="_Logo"></a>
+            <div id="_Links">
+                <a href="/about">about</a> |
+                <a href="/editor">editor</a>
+            </div>
+        </section>
+    </body>
+</html>

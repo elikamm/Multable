@@ -1,0 +1,80 @@
+#_Content {
+    position: absolute;
+    top: 2.9rem; left: .5rem;
+    width: calc(100% - 1.2rem);
+    height: calc(100% - 3.6rem);
+    overflow: hidden; cursor: text;
+}
+#_Content:focus-within {
+    border-color: var(--_Plane5);
+}
+#_Content:focus-within #_Caret {
+    display: block;
+}
+#_Measure {
+    position: absolute; top: 0; left: 100%;
+    font-size: 1.7rem; font-family: "_Code";
+    white-space: pre;
+}
+._Editor {
+    position: absolute;
+    top: 1rem; left: 4rem; padding: 0;
+    width: calc(100% - 5rem); height: calc(100% - 2rem);
+    border: none; outline: none; resize: none;
+    font-size: 1.7rem; font-family: "_Code";
+    line-height: 1.9rem; background: transparent;
+    white-space: pre;
+}
+#_Input {
+    color: transparent; border: none;
+}
+#_Input::selection {
+    color: transparent;
+    background: var(--_Plane5);
+}
+#_Display {
+    pointer-events: none;
+}
+#_Lines {
+    position: absolute;
+    top: 1rem; left: 1rem;
+    font-size: 1.7rem; line-height: 1.9rem;
+    font-family: "_Code"; color: var(--_Plane4);
+    white-space: pre; background: var(--_Plane2);
+}
+#_Code {
+    position: absolute;
+    top: 0; left: 0;
+    color: var(--_Plane7);
+}
+
+#_Caret {
+    position: absolute; display: none;
+    top: 0; left: 0; width: .15rem; height: 1.9rem;
+    transition: top 50ms, left 50ms;
+}
+
+#_Cursor {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    animation: _Caret .6s linear infinite alternate;
+    background: var(--_Plane9);
+}
+@keyframes _Caret {
+    0% { opacity: 1; } 49% { opacity: 1; }
+    50% { opacity: .1; } 100% { opacity: .1; }
+}
+
+#_Autofill {
+    position: absolute; display: none;
+    top: 100%; left: 0; width: fit-content; height: fit-content;
+    background: var(--_Plane3); border: .1rem solid var(--_Plane4);
+}
+#_Autofill div {
+    font-size: 1.4rem; color: var(--_Plane7); line-height: 1.8rem;
+    padding: 0 .5rem 0 .5rem;
+}
+
+#_Autofill span {
+    font-size: 1.2rem;
+}

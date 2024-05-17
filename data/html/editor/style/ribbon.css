@@ -1,0 +1,71 @@
+#_Ribbon {
+    position: absolute;
+    top: .5rem; left: .5rem;
+    width: calc(100% - 1rem);
+}
+#_Ribbon u {
+    text-decoration: none;
+}
+
+#_Title {
+    position: absolute; color: var(--_Plane8);
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+#_Edited {
+    display: none;
+    color: var(--_Plane7);
+}
+
+#_Load {
+    position: absolute;
+    top: .7rem; right: 7.5rem;
+}
+#_Run {
+    position: absolute;
+    top: 0; right: 0; width: 6.5rem;
+}
+#_Run span { font-size: .7em; }
+
+._Compact {
+    position: relative; font-size: 0;
+    margin: .3rem 0 1rem .4rem;
+}
+._Compact input {
+    margin: 0 .2rem 0 0;
+    width: calc(50% - 2.1rem);
+    display: inline-block;
+}
+._Compact h4 {
+    position: absolute;
+    top: calc(100% - .4rem);
+}
+._Compact h4:first-of-type {
+    right: calc(50% + .9rem);
+}
+
+#_Hide {
+    display: inline-block;
+    margin-left: 1rem; cursor: pointer;
+    width: 1.5rem; height: 1.8rem;
+    appearance: none;
+}
+#_Hide:hover { background: var(--_Plane4); }
+#_Hide:active { background: var(--_Plane3); }
+#_Hide:checked::after {
+    content: ""; display: block;
+    position: absolute; top: 15%; left: 15%;
+    width: 70%; height: 70%; border-radius: 10%;
+    background-color: var(--_Accent);
+}
+#_Hide:focus + h2 { color: var(--_Accent); }
+#_Hide + h2 {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2.6rem;
+    width: calc(100% - 4rem);
+}
+
+[_default] {
+    width: 5rem;
+}

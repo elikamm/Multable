@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "_Text";
+    src: url(/assets/main/font/text.ttf);
+}
+@font-face {
+    font-family: "_Text";
+    src: url(/assets/main/font/bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "_Code";
+    src: url(/assets/main/font/code.ttf);
+}
+
+:root {
+    font-size: min(1.9vmin, 19px);
+
+    --_Fast:    200ms ease-out;
+    --_Slow:    250ms ease-in-out;
+    --_Accent:  #577e89;
+    --_Notice:  #ff033e;
+}
+
+c_help      { color: var(--_Plane4); font-style: italic; }
+c_branch    { color: var(--_Accent); }
+
+@media (prefers-color-scheme: light) {
+    :root, ::backdrop {
+        --_Plane0:  #fbfbfb;
+        --_Plane1:  #f3f3f3;
+        --_Plane2:  #e7e7e7;
+        --_Plane3:  #dbdbdb;
+        --_Plane4:  #cfcfcf;
+        --_Plane5:  #a1a1a1;
+        --_Plane6:  #747474;
+        --_Plane7:  #5a5a5a;
+        --_Plane8:  #464646;
+        --_Plane9:  #1d1d1d;
+
+        --_Shadow:  #bfbfbf;
+
+        --_Logo:    url("/assets/graphic/logo-dark.png");
+    }
+
+    c_comment   { color: #007500; }
+    c_string    { color: #991515; }
+    c_number    { color: #0d7b4e; }
+    c_command   { color: #6e5322; }
+    c_variable  { color: #ff0d0d; }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root, ::backdrop {
+        --_Plane0:  #101010;
+        --_Plane1:  #161616;
+        --_Plane2:  #2a2a2a;
+        --_Plane3:  #313131;
+        --_Plane4:  #404040;
+        --_Plane5:  #636363;
+        --_Plane6:  #939393;
+        --_Plane7:  #a0a0a0;
+        --_Plane8:  #c1c1c1;
+        --_Plane9:  #eeeeee;
+
+        --_Shadow:  #313131;
+
+        --_Logo:    url("/assets/graphic/logo-light.png");
+    }
+
+    c_comment   { color: #6a9955; }
+    c_string    { color: #ce9178; }
+    c_number    { color: #b4cda7; }
+    c_command   { color: #b7ba7d; }
+    c_variable  { color: #91d7fe; }
+}
